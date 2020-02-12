@@ -20,7 +20,12 @@ body {
     height: 100%;
 }
 
+h2 {
+    color: #b3b3b3;
+}
+
 a {
+    color: #b3b3b3;
     border-bottom: 1px solid transparent;
     list-style: none;
     text-decoration: none;
@@ -72,9 +77,38 @@ a {
     font-weight: 700;
 }
 
+.navbar_link:hover {
+    color: #fff;
+}
+
 .fas {
+    color: #b3b3b3;
     float: left;
     padding-right: 10px;
+    font-size: 16px;
+}
+
+.far {
+    color: #b3b3b3;
+    float: left;
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.fas:hover {
+    color: #fff;
+}
+
+.far:hover {
+    color: #fff;
+}
+
+#casa_color {
+    color: #fff;
+}
+
+.fa-home {
+    color: #fff;
 }
 
 .navbar_footer {
@@ -177,10 +211,9 @@ header {
 }
 
 .root_now-playing-bar {
+    color: #b3b3b3;
     align-items: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     height: 90px;
     padding: 0 16px;
 }
@@ -205,17 +238,43 @@ header {
     align-items: center;
 }
 
+.player-controls__buttons {
+    margin-bottom: 12px;
+    width: 224px;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+
+.spoticon {
+    background-color: black;
+    border: none;
+    background-color: transparent;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+}
+
 .progress-bar {
-    height: 12px;
     position: relative;
     width: 100%;
+}
+
+.playback-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.playback-bar__progress-time {
+    font-size: 11px;
+    line-height: 16px;
+    min-width: 40px;
+    text-align: center;
 }
 
 .progress-bar__wrapper {
     background-color: #404040;
     border-radius: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 4px;
     width: 100%;
@@ -228,18 +287,24 @@ header {
     border-radius: 2px;
 }
 
+.progress-bar__slider {
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    margin-top: -6px;
+    z-index: 100;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+    transform: scale(0);
+}
+
 .now-playing-bar__right {
     width: 30%;
     min-width: 180px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -254,12 +319,8 @@ header {
 }
 
 .volume-bar {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     width: 136px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -269,4 +330,109 @@ header {
     height: 4px;
     width: 100%;
     transform: translateX(0%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    position: relative;
+}
+
+.content-music {
+    color: #b3b3b3;
+    display: grid;
+    grid-gap: 16px;
+    overflow: hidden;
+    padding: 0 32px;
+}
+
+.content__title {
+    grid-column: 1/-1;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.content__focus {
+    font-size: 28px;
+    line-height: 1.6;
+    font-weight: 600;
+    color: #fff;
+    flex: 1 0 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.head_two__focus {
+    font-size: 28px;
+    line-height: 1.6;
+    font-weight: 600;
+    display: inline;
+    white-space: nowrap;
+}
+
+.view__eth {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+    background: transparent;
+    flex: 0;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+.content__subtitle {
+    font-size: 14px;
+    display: block;
+    flex: 1 100%;
+}
+
+.music__card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 20px 16px;
+    background: #282828;
+    border-radius: 8px;
+}
+
+.react-contextmenu-wrapper {
+    display: inline;
+}
+
+.music_logo {
+    height: 0;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    margin-bottom: 16px;
+    background-color: #333;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.3), 0 1px 2px 0 rgba(0,0,0,.2);
+}
+
+.copertina__disco {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.name__copertina {
+    min-height: 62px;
+}
+
+.explication__copertina {
+    font-size: 12px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #b3b3b3;
+    padding: 0;
+    margin-top: 4px;
 }
