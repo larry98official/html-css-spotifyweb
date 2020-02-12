@@ -2,9 +2,11 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify – Home</title>
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5e50c7a217.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
@@ -13,30 +15,33 @@
                 <nav class="navbar">
                     <div class="navbar-header">
                         <a href="#" class="logo_navbar">
-                            <img src="https://www.bleachersmusic.com/assets/img/spotify-logo.png" alt="logo">
+                            <img class="scritta_logo" src="https://www.bleachersmusic.com/assets/img/spotify-logo.png" alt="logo">
                         </a>
                     </div>
-                    <ul>
-                        <li>
-                            <div class="navbar-item">
-                                <a href="#"><i class="fas fa-home"></i>Home</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="navbar-item">
-                                <a href="#"><i class="fas fa-search"></i>Cerca</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="navbar-item">
-                                <a href="#"><i class="fas fa-book"></i>La tua libreria</a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="">
+                        <ul>
+                            <li>
+                                <div class="navbar-item">
+                                    <a href="#" class="navbar_link"><i class="fas fa-home"></i>Home</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="navbar-item">
+                                    <a href="#" class="navbar_link"><i class="fas fa-search"></i>Cerca</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="navbar-item">
+                                    <a href="#" class="navbar_link"><i class="fas fa-book"></i>La tua libreria</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="navbar_footer">
                         <div class="navbar_signup">
                             <div class="copyright">
                                 <a href="#">Politica sui cookie</a>
+                                <div class="divisore"></div>
                                 <a href="#">Privacy</a>
                             </div>
                         </div>
@@ -44,34 +49,80 @@
                 </nav>
             </div>
             <!-- fine barra laterale sx -->
+            <!-- inzio parte superiore -->
+            <header>
+                <div class="barra_hd">
+                    <div class="barra_button">
+                        <button class="avanti-or-indietro" id="indietro" type="button" name="button"><i class="fas fa-chevron-left"></i></button>
+                        <button class="avanti-or-indietro" type="button" name="button"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="barra_button">
+                        <button class="button_go-in" id="iscriviti" type="button" name="button">Iscriviti</button>
+                        <button class="button_go-in" id="accedi" type="button" name="button">Accedi</button>
+                    </div>
+                </div>
+            </header>
+            <!-- fine parte superiore -->
             <!-- barra azione musicale -->
             <div class="root_now-playing-bar">
-
+                <div class="now-playing-bar__left"></div>
+                <div class="now-playing-bar__center">
+                    <div class="player-controls">
+                        <div class="player-controls__buttons">
+                            <div class="control-button-wrapper">
+                                <button type="button" name="button"></button>
+                            </div>
+                            <div class="control-button-wrapper">
+                                <button type="button" name="button"></button>
+                            </div>
+                            <div class="control-button-wrapper">
+                                <button type="button" name="button"></button>
+                            </div>
+                            <div class="control-button-wrapper">
+                                <button type="button" name="button"></button>
+                            </div>
+                            <div class="control-button-wrapper">
+                                <button type="button" name="button"></button>
+                            </div>
+                        </div>
+                        <div class="playback-bar">
+                            <div class="playback-bar__progress-time"></div>
+                            <div class="progress-bar">
+                                <div class="progress-bar__wrapper">
+                                    <div class="progress-bar__fg-time">
+                                        <button type="button" name="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="playback-bar__progress-time"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="now-playing-bar__right">
+                    <div class="now-playing-bar__right__inner">
+                        <div class="ExtraControls">
+                            <div class="volume-bar">
+                                <button type="button" name="button"></button>
+                                <div class="progress-bar">
+                                    <div class="progress-bar__wrapper">
+                                        <div class="progress-bar__fg-time">
+                                            <div class="progress-bar__fg"></div>
+                                        </div>
+                                        <button type="button" name="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- fine barra azione musicale -->
-            <!-- inizio parte centrale -->
-            <div class="root_main-view">
-                <!-- inzio parte superiore -->
-                <header>
-                    <div class="barra_button">
-                        <button type="button" name="button"></button>
-                        <button type="button" name="button"></button>
-                    </div>
-                    <div class="barra_button">
-                        <button type="button" name="button"></button>
-                        <button type="button" name="button"></button>
-                    </div>
-                </header>
-                <!-- fine parte superiore -->
-                <!-- inzio parte contenuti -->
-                <section>
-                    <div class="">
-
-                    </div>
-                </section>
-                <!-- fine parte contenuti -->
-            </div>
-            <!-- fine parte centrale -->
+            <!-- inzio parte contenuti -->
+            <main>
+                <div class="">
+                </div>
+            </main>
+            <!-- fine parte contenuti -->
         </div>
     </body>
 </html>
